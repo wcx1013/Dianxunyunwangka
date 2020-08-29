@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_home"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/fanhui"
+        android:layout_width="match_parent"
+        android:layout_height="50pt"
+        android:background="#2A2721"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="48dp"
+        tools:layout_editor_absoluteY="-3dp">
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="消息中心"
+        android:textColor="#f7f3ea"
+        android:textSize="16pt"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="16dp" />
+    <TextView
+        android:id="@+id/biaoti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="系统维护通知"
+        android:textSize="13pt"
+        android:textColor="#f7f3ea"
+        app:layout_constraintTop_toBottomOf="@+id/fanhui"
+        android:layout_marginTop="20pt"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/riqi"
+        android:text="2020.8.10"
+        android:textSize="11pt"
+        android:textColor="#f7f3ea"
+        app:layout_constraintTop_toBottomOf="@+id/biaoti"
+        android:layout_marginTop="2pt"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/neirong"
+        app:layout_constraintTop_toBottomOf="@+id/riqi"
+        android:layout_marginTop="2pt"
+        android:text="&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;系统维护通知系统维护通知系统维护通知系统维护通知系统维护通知系统维护通知系统维护通知系统维护通知系统维护通知系统维护通知。"
+        android:textSize="13pt"
+        android:textColor="#f7f3ea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/neirong"
+        android:layout_marginTop="20pt"
+        android:text="电讯云网咖"
+        android:textSize="13pt"
+        android:textColor="#f7f3ea"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="15pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

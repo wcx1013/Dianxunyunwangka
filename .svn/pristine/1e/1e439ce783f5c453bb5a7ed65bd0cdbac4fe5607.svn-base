@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/translucent">
+    <RelativeLayout
+        android:layout_width="300pt"
+        android:layout_height="180pt"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/bg_white"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/paidui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退出提醒"
+            android:layout_centerHorizontal="true"
+            android:textSize="15pt"
+            android:textColor="#444444"
+            android:layout_marginTop="10pt"
+            />
+
+        <View
+            android:id="@+id/hengxian"
+            android:layout_width="match_parent"
+            android:layout_height="1pt"
+            android:background="@color/translucent_black_60"
+            android:layout_below="@+id/paidui"
+            android:layout_marginTop="10pt"
+            />
+        <TextView
+            android:id="@+id/manzuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定退出账号？"
+            android:textSize="13pt"
+            android:textColor="#555555"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+
+        <RadioGroup
+            android:layout_below="@+id/jifei"
+            android:layout_marginTop="22pt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:id="@+id/redios">
+            <RadioButton
+                android:id="@+id/redio1"
+                android:layout_width="wrap_content"
+                android:layout_height="44pt"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textSize="13pt"
+                android:button="@null"
+                android:text="确定"
+                android:gravity="center"
+                android:background="@drawable/left_yuanjiao"
+                android:textColor="@drawable/color_selecters"
+                />
+            <RadioButton
+                android:id="@+id/redio2"
+                android:layout_width="wrap_content"
+                android:layout_height="44pt"
+                android:layout_weight="1"
+                android:button="@null"
+                android:textSize="13pt"
+                android:gravity="center"
+                android:text="取消"
+                android:background="@drawable/right_yuanjiao"
+                android:textColor="@drawable/color_selecters"
+                />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

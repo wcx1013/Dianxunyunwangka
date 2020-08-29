@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_home">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/tu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_mines"
+    tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/touxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pic_photo"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="43dp"
+            tools:layout_editor_absoluteY="66dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="80dp"
+            android:text="我是用户昵称"
+            app:layout_constraintLeft_toRightOf="@+id/touxiang"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="14pt"
+            android:textColor="#f7f3ea"
+            tools:ignore="MissingConstraints" />
+        <ImageView
+            android:id="@+id/shichang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_times2"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toBottomOf="@+id/touxiang"
+            android:layout_marginTop="22pt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="35pt"
+             />
+
+        <TextView
+            android:id="@+id/mianfeishichang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8pt"
+            android:layout_marginTop="26dp"
+            android:text="剩余免费时长"
+            app:layout_constraintLeft_toRightOf="@+id/shichang"
+            app:layout_constraintTop_toBottomOf="@+id/touxiang"
+            android:textSize="12pt"
+            android:textColor="#f7f3ea"
+            tools:ignore="MissingConstraints" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="212分钟"
+                app:layout_constraintTop_toBottomOf="@+id/mianfeishichang"
+                app:layout_constraintLeft_toRightOf="@+id/shichang"
+                android:layout_marginStart="8pt"
+                android:textSize="12pt"
+                android:textColor="#f7f3ea"
+                tools:ignore="MissingConstraints" />
+        <ImageView
+            android:id="@+id/weixinhao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_weixins2"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toBottomOf="@+id/touxiang"
+            android:layout_marginTop="22pt"
+          app:layout_constraintLeft_toRightOf="@+id/mianfeishichang"
+            android:layout_marginStart="100pt"
+             />
+
+        <TextView
+            android:id="@+id/weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8pt"
+            android:layout_marginTop="26dp"
+            android:text="微信"
+            app:layout_constraintLeft_toRightOf="@+id/weixinhao"
+            app:layout_constraintTop_toBottomOf="@+id/touxiang"
+            android:textSize="12pt"
+            android:textColor="#f7f3ea"
+            tools:ignore="MissingConstraints" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未绑定"
+                app:layout_constraintTop_toBottomOf="@+id/weixin"
+                app:layout_constraintLeft_toRightOf="@+id/weixinhao"
+                android:layout_marginStart="8pt"
+                android:textSize="12pt"
+                android:textColor="#f7f3ea"
+                tools:ignore="MissingConstraints" />
+        <ImageView
+            android:id="@+id/newss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_newss"
+            app:layout_constraintTop_toBottomOf="@+id/tu"
+            android:layout_marginTop="48pt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="15pt"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:text="消息中心"
+            android:textSize="12pt"
+            android:textColor="#f7f3ea"
+            app:layout_constraintTop_toBottomOf="@+id/tu"
+            android:layout_marginTop="48pt"
+            app:layout_constraintLeft_toRightOf="@+id/newss"
+            android:layout_marginStart="12pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints" />
+        <ImageView
+            android:background="@drawable/icon_arrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tu"
+            android:layout_marginTop="48pt"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginEnd="15pt"
+            tools:ignore="MissingConstraints" />
+        <View
+            android:id="@+id/viewone"
+            android:layout_width="match_parent"
+            android:layout_height="1pt"
+            android:background="#554f44"
+            app:layout_constraintTop_toBottomOf="@+id/newss"
+            android:layout_marginTop="20pt"
+            tools:ignore="MissingConstraints" />
+        <ImageView
+            android:id="@+id/opinions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_opinions"
+            app:layout_constraintTop_toBottomOf="@+id/viewone"
+            android:layout_marginTop="18pt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="15pt"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:text="意见反馈"
+            android:textSize="12pt"
+            android:textColor="#f7f3ea"
+            app:layout_constraintTop_toBottomOf="@+id/viewone"
+            android:layout_marginTop="18pt"
+            app:layout_constraintLeft_toRightOf="@+id/newss"
+            android:layout_marginStart="12pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints" />
+        <ImageView
+            android:background="@drawable/icon_arrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/viewone"
+            android:layout_marginTop="18pt"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginEnd="15pt"
+            tools:ignore="MissingConstraints" />
+        <View
+            android:id="@+id/viewtwo"
+            android:layout_width="match_parent"
+            android:layout_height="1pt"
+            android:background="#554f44"
+            app:layout_constraintTop_toBottomOf="@+id/viewone"
+            android:layout_marginTop="50pt"
+            tools:ignore="MissingConstraints" />
+        <ImageView
+            android:id="@+id/abouts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_abouts"
+            app:layout_constraintTop_toBottomOf="@+id/viewtwo"
+            android:layout_marginTop="18pt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="15pt"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:text="关于我们"
+            android:textSize="12pt"
+            android:textColor="#f7f3ea"
+            app:layout_constraintTop_toBottomOf="@+id/viewtwo"
+            android:layout_marginTop="18pt"
+            app:layout_constraintLeft_toRightOf="@+id/newss"
+            android:layout_marginStart="12pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints" />
+        <ImageView
+            android:background="@drawable/icon_arrows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/viewtwo"
+            android:layout_marginTop="18pt"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginEnd="15pt"
+            tools:ignore="MissingConstraints" />
+        <View
+            android:id="@+id/viewthree"
+            android:layout_width="match_parent"
+            android:layout_height="1pt"
+            android:background="#554f44"
+            app:layout_constraintTop_toBottomOf="@+id/viewtwo"
+            android:layout_marginTop="50pt"
+            tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/tuichu"
+            android:layout_width="350pt"
+            android:layout_height="wrap_content"
+            android:text="退出"
+            android:textColor="#ffcf2d"
+            android:textSize="17pt"
+            app:layout_constraintTop_toBottomOf="@+id/viewthree"
+            android:layout_marginTop="60pt"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@drawable/botten_bg"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

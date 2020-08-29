@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_home">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/fanhui"
+        android:layout_width="match_parent"
+        android:layout_height="45pt"
+        android:background="#2A2721"
+        tools:ignore="MissingConstraints"
+   >
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="意见反馈"
+        android:textColor="#f7f3ea"
+        android:textSize="16pt"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="160pt"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16pt"
+         />
+    <TextView
+        android:id="@+id/problem"
+       app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="15pt"
+        app:layout_constraintTop_toBottomOf="@+id/fanhui"
+        android:layout_marginTop="20pt"
+        android:text="问题描述"
+        android:textSize="13pt"
+        android:textColor="#f7f3ea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/riqis"
+        android:text="0/100"
+        android:textSize="13pt"
+        android:textColor="#f7f3ea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/fanhui"
+        android:layout_marginTop="20pt"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="15pt"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/yijian"
+        android:hint="请留下您宝贵意见,我们将努力改进"
+        app:layout_constraintTop_toBottomOf="@+id/problem"
+        android:layout_marginTop="9pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/bg_kuang"
+        android:layout_width="350pt"
+        android:layout_height="220pt"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:id="@+id/jiahao"
+        android:background="@drawable/icon_uploads"
+        app:layout_constraintTop_toBottomOf="@+id/yijian"
+        android:layout_marginTop="9pt"
+        android:layout_marginStart="15pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/yijian"
+        app:layout_constraintLeft_toRightOf="@+id/jiahao"
+        android:layout_marginStart="10pt"
+        android:layout_marginTop="20pt"
+        android:textSize="13pt"
+        android:textColor="#f7f3ea"
+        android:text="上传问题截图(选填)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/tijiao"
+        android:layout_width="350pt"
+        android:layout_height="wrap_content"
+        android:text="提交"
+        android:textColor="#ffcf2d"
+        android:textSize="17pt"
+        app:layout_constraintTop_toBottomOf="@+id/jiahao"
+        android:layout_marginTop="30pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/botten_bg"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

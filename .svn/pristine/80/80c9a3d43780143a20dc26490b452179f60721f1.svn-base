@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#1A1916">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/fanhui"
+        android:layout_width="match_parent"
+        android:layout_height="50pt"
+        android:background="#2A2721"
+        tools:ignore="MissingConstraints">
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="绑定手机号"
+        android:textColor="#f7f3ea"
+        android:textSize="16pt"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="150pt"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16pt"
+         />
+
+    <TextView
+        android:id="@+id/bind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="为了您的账号安全，请绑定手机号！"
+        android:textColor="#f7f3ea"
+        android:textSize="12pt"
+        tools:ignore="MissingConstraints"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="27pt"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="76pt"
+         />
+    <ImageView
+        android:id="@+id/login_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="40pt"
+        android:layout_marginTop="30pt"
+        android:src="@drawable/icon_login_phone"
+        app:layout_constraintTop_toBottomOf="@id/bind"
+        tools:ignore="MissingConstraints"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="30pt"
+
+      />
+
+
+    <EditText
+        android:id="@+id/shojihao"
+        android:layout_width="@dimen/dp_270"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30pt"
+        android:text="15812345678"
+        android:textColor="#f7f3ea"
+        android:textSize="13pt"
+        app:layout_constraintLeft_toRightOf="@+id/login_phone"
+        android:layout_marginStart="12pt"
+        app:layout_constraintTop_toBottomOf="@id/bind"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/login_securitycode"
+        android:layout_width="wrap_content"
+        android:layout_height="40pt"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/icon_login_securitycode"
+        app:layout_constraintTop_toBottomOf="@id/login_phone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="30pt"
+        tools:ignore="MissingConstraints"
+         />
+
+    <EditText
+        android:id="@+id/code"
+        android:layout_width="270pt"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30pt"
+        android:layout_marginLeft="8pt"
+        app:layout_constraintLeft_toRightOf="@+id/login_securitycode"
+        android:textSize="13pt"
+        android:hint="请输入图形验证码"
+        android:textColor="#848079"
+        app:layout_constraintTop_toBottomOf="@id/shojihao"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:layout_width="58pt"
+        android:layout_height="29pt"
+        android:background="@color/color_f9f9f9"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="250pt"
+        app:layout_constraintTop_toBottomOf="@id/shojihao"
+        android:layout_marginTop="18pt"
+        />
+
+    <ImageView
+        android:id="@+id/verificationcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30pt"
+        android:src="@drawable/icon_verificationcode"
+        app:layout_constraintTop_toBottomOf="@id/login_securitycode"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="30pt"/>
+
+    <EditText
+        android:id="@+id/code2"
+        android:layout_width="270pt"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30pt"
+        android:layout_marginLeft="8pt"
+        app:layout_constraintLeft_toRightOf="@+id/verificationcode"
+        android:textSize="13pt"
+        android:hint="请输入验证码"
+        android:textColor="#848079"
+        app:layout_constraintTop_toBottomOf="@id/code"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/code3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取验证码"
+        android:textColor="#ffcf2d"
+        android:textSize="12pt"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="255pt"
+        app:layout_constraintTop_toBottomOf="@+id/code"
+        android:layout_marginTop="30pt"
+     />
+    <TextView
+        android:id="@+id/code4"
+        android:layout_width="135pt"
+        android:layout_height="20pt"
+        android:layout_marginTop="19pt"
+        android:background="@drawable/black_bg"
+        android:text="图形验证码输入错误!"
+        android:textColor="#FFF9F9F9"
+        android:textSize="11pt"
+        app:layout_constraintTop_toBottomOf="@+id/code2"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="123pt"
+        android:gravity="center"
+         />
+
+    <Button
+        android:id="@+id/login_btw"
+        android:layout_width="300pt"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20pt"
+        android:background="@drawable/botten_bg"
+        android:text="登录"
+        android:textColor="#ffcf2d"
+        android:textSize="17pt"
+        app:layout_constraintTop_toBottomOf="@id/code4"
+        tools:ignore="MissingConstraints"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="30pt"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

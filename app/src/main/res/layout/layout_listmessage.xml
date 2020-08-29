@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:id="@+id/xinfeng"
+        android:background="@drawable/icon_news_ns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="15pt"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/biaotis"
+        android:layout_marginTop="20pt"
+        app:layout_constraintLeft_toRightOf="@+id/xinfeng"
+        android:layout_marginStart="6pt"
+        android:text="系统维护通知"
+        android:textSize="13pt"
+        android:textColor="#f7f3ea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/riqis"
+        android:text="2020.8.10"
+        android:textSize="11pt"
+        android:textColor="#f7f3ea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/fanhui"
+        android:layout_marginTop="20pt"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="15pt"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:text="系统维护通知系统维护通知系统维护通知系统维护通知系统维护通知系统维护通知系统维护通知"
+        android:textSize="12pt"
+        android:textColor="#f7f3ea"
+        app:layout_constraintTop_toBottomOf="@+id/biaotis"
+        app:layout_constraintLeft_toRightOf="@+id/xinfeng"
+        android:layout_marginStart="6pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

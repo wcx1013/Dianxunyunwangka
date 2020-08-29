@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_home">
+    <ImageView
+        android:id="@+id/dianxunyun"
+        android:background="@drawable/pic_abouts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <com.xzq.module_base.views.DrawableTextView
+        android:id="@+id/banben"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150pt"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="电讯云网咖\n当前版本1.0.0"
+        android:textColor="@color/white"
+        android:textSize="12pt"
+        app:dtv_drawableHeight="60pt"
+        app:dtv_drawableTop="@drawable/pic_icon"
+        app:dtv_drawableWidth="60pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dianxunyun"
+        android:drawablePadding="10pt"
+        tools:ignore="MissingConstraints" />
+
+    <com.xzq.module_base.views.DrawableTextView
+        android:id="@+id/qq_qun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/icon_qq"
+        android:drawablePadding="8pt"
+        android:text="QQ群:901014549"
+        android:textColor="#f7f3ea"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintTop_toBottomOf="@+id/banben"
+        android:layout_marginTop="34pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="15pt"
+        app:dtv_drawableWidth="20pt"
+        app:dtv_drawableHeight="20pt"
+        tools:ignore="MissingConstraints" />
+    <com.xzq.module_base.views.DrawableTextView
+        android:id="@+id/gongzhonghao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/icon_accounts"
+        android:drawablePadding="8pt"
+        android:text="公众号:DX云网咖"
+        android:textColor="#f7f3ea"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintTop_toBottomOf="@+id/qq_qun"
+        android:layout_marginTop="12pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="14pt"
+        app:dtv_drawableWidth="20pt"
+        app:dtv_drawableHeight="20pt"
+        tools:ignore="MissingConstraints" />
+    <com.xzq.module_base.views.DrawableTextView
+        android:id="@+id/kefu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/icon_weixin"
+        android:drawablePadding="8pt"
+        android:text="微信客服:dianxunyunwangka"
+        android:textColor="#f7f3ea"
+        android:textSize="12pt"
+        app:layout_constraintTop_toBottomOf="@+id/gongzhonghao"
+        android:layout_marginTop="12pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="14pt"
+        app:dtv_drawableWidth="20pt"
+        app:dtv_drawableHeight="20pt"
+        tools:ignore="MissingConstraints" />
+    <com.xzq.module_base.views.DrawableTextView
+        android:id="@+id/guanwang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/icon_webpage"
+        android:drawablePadding="8pt"
+        android:text="官方网站:http://www.dxywk.com"
+        android:textColor="#f7f3ea"
+        android:textSize="12pt"
+        app:layout_constraintTop_toBottomOf="@+id/kefu"
+        android:layout_marginTop="12pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="14pt"
+        app:dtv_drawableWidth="20pt"
+        app:dtv_drawableHeight="20pt"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
